@@ -63,8 +63,8 @@ def CS_Div(x,y1,y2,sigma): # conditional cs divergence Eq.18
 
 def CS_QMI(x,y,sigma = None):
     """
-    x: NxD
-    y: NxD
+    x: NxD_x
+    y: NxD_y
     Kx: NxN
     ky: NxN
     """
