@@ -162,7 +162,7 @@ class CS_IB_network(torch.nn.Module):
     '''
 
     def __init__(self,K,n_x,n_y,logvar_t=-1.0,train_logvar_t=False):
-        super(CS_IB_network_,self).__init__()
+        super(CS_IB_network,self).__init__()
 
         self.encoder = Deterministic_encoder(K,n_x)
         self.decoder = Deterministic_decoder(K,n_y)
@@ -336,7 +336,7 @@ for beta in betas:
     n_x = 8
     n_y = 1
     K = 128
-    network =  CS_IB_network_(K,n_x,n_y).to(device)
+    network =  CS_IB_network(K,n_x,n_y).to(device)
 
     # Definition of the optimizer
     learning_rate=0.0001
